@@ -1,8 +1,7 @@
 # Project Name
 ![insert alt text](images/example.jpg)
 
-This is a project about [insert topic].
-
+This is a repository for the Final Integrated Project of Level 1 - Interactive Media Design.
 ## Installation 💻
 No installation required, simply download the zip file and extract.
 ## Usage
