@@ -1,3 +1,109 @@
-.hidden{
+/* 1. --- Web Fonts --- */
+
+@font-face {
+    font-family: 'ceragr-regularuploaded_file';
+    src: url('../fonts/cera-gr-webfont.woff2') format('woff2'),
+         url('../fonts/cera-gr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ceragr-mediumuploaded_file';
+    src: url('../fonts/cera-gr-medium-webfont.woff2') format('woff2'),
+         url('../fonts/cera-gr-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. ---General Styles--- */
+
+/* outline sits outside the border, but it does not take up space. It’s more like a visual effect painted around the element. */
+#mobile-outline {
+   outline: 20px solid #333;
+   width: 412px;
+   margin: 20px auto 20px auto;
+   border-radius: 10px;
+} 
+
+.flexbox {
+   display: flex;
+   justify-content:space-between;
+
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    color: #626262;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #626262;
+    font-family: 'Sanchez', 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.cr-red {
+    color: #9a2018;
+}
+
+/* 3. ---Header--- */
+
+#main-nav label img {
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	transition: all .5s ease;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+ }
+ 
+ #main-nav li a {
+     display: block;
+     padding: 10px 0 10px 0;
+     text-align: center;
+     color: #626262;
+ }
+ 
+ #main-nav li {
+     border-bottom: 1px solid #efefef;
+ }
+
+#burger-con, #main-nav input {
     display: none;
 }
+
+/* The general sibling combinator ~ means: “Select any element that is a sibling (shares the same parent) and comes after the target element in the DOM.” */
+
+/* When the checkbox is checked, target the <ul id="burger-con"> that comes after it in the markup. */
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+
+ /* When the checkbox is checked, target the <img> inside the <label> that comes after it. */
+ #main-nav input:checked ~ label img{
+    transform: rotate(90deg);
+ }
+
