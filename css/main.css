@@ -24,12 +24,17 @@
    width: 412px;
    margin: 20px auto 20px auto;
    border-radius: 10px;
+   overflow: hidden;
 } 
 
 .flexbox {
    display: flex;
    justify-content:space-between;
 
+}
+
+.no-padding {
+    padding: 0;
 }
 
 a {
