@@ -87,7 +87,7 @@ body {
     inset: 0;
     z-index: 1;
     background-image: url(../images/topography.svg);
-    opacity: 0.15;
+    opacity: 0.05;
     background-repeat: no-repeat;
     background-size: 700px;
 }
@@ -478,8 +478,7 @@ body {
  /* B4. ---Intro--- */
 #address {
     position: relative;
-    background-color: #006F79;
-    color: white;
+    background-color: #d4d4d4;
     margin-top: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -539,7 +538,6 @@ body {
 
 #experiences h2 {
     margin: 15px 0;
-    color: #992120;
 }
 #exp-gallery {
     list-style: none;
