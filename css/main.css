@@ -1,6 +1,6 @@
 /* 1. --- Web Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sanchez:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 @font-face {
     font-family: 'ceragr-regularuploaded_file';
@@ -59,6 +59,7 @@ input, textarea {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Sanchez', serif;
+    font-weight: 300;
 }
 
 h2 {
@@ -75,8 +76,8 @@ body {
     padding: 0;
     color: #2f2f2f;
     font-family: 'Inter', sans-serif;
-    font-weight: 350;
-    font-size: 12px;
+    font-weight: 450;
+    font-size: 13px;
 }
 
 .topo-bg::before {
@@ -87,7 +88,7 @@ body {
     background-image: url(../images/topography.svg);
     opacity: 0.15;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 700px;
 }
 
 
@@ -109,7 +110,8 @@ body {
 }
 
 .breadcrumb {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
 }
     .breadcrumb li {
         display: inline;
@@ -209,6 +211,8 @@ body {
  /* 4. ---Intro--- */
 #address {
     position: relative;
+    background-color: #006F79;
+    color: white;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -228,8 +232,12 @@ body {
 }
 
 #address summary {
+    font-size: 13px;
     margin-bottom: 20px;
 }
+    #address summary:hover {
+        color: #ffb8b8;
+    }
 
 #address details[open] summary {
     order: 1;
@@ -252,3 +260,5 @@ body {
 .photograph:nth-of-type(2) {
     transform: rotate(28deg) translate(-25px,20px);
 }
+
+ /* 5. ---Experiences--- */
