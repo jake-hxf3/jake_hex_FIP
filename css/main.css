@@ -87,7 +87,7 @@ body {
     inset: 0;
     z-index: 1;
     background-image: url(../images/topography.svg);
-    opacity: 0.15;
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-size: 700px;
 }
@@ -477,20 +477,28 @@ body {
  /* B --- SUMMER PAGE --- */
  /* B4. ---Intro--- */
 #address {
-    position: relative;
-    background-color: #006F79;
-    color: white;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 80px;
 }
 
-#address h2 {
-    margin-bottom: 20px;
+#address-overlap {
+    height: 240px;
+    grid-template-rows: 240px;
+    align-items: end;
 }
 
-#address div, #address img {
+#address-overlap > div {
+    z-index: 2;
+}
+
+#address-overlap h2 {
     z-index: 3;
+}
+
+#photo-con {
+    position: relative;
+    width: 100%;
+    height: 152px;
+    background-color: darkcyan;
 }
 
 #address details {
@@ -533,13 +541,14 @@ body {
 
  /* 5. ---Experiences--- */
 #experiences {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    z-index: 3;
 }
 
 #experiences h2 {
     margin: 15px 0;
-    color: #992120;
 }
 #exp-gallery {
     list-style: none;
@@ -651,7 +660,7 @@ body {
 
 
 
- /* 5. ---Quote--- */
+ /* 6. ---Quote--- */
  #quote {
     height: 350px;
     box-sizing: border-box;
@@ -680,11 +689,12 @@ q{
     font-weight: 200;
 }
 
- /* 5. ---Vouchers--- */
+ /* 7. ---Vouchers--- */
 #voucher > div {
     height: 228px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -710,7 +720,7 @@ q{
     padding-right: 12px;
 }
 
-/* 6. --- Footer --- */
+/* 8. --- Footer --- */
 
 #main-footer {
     background-image: url(../images/footer.jpg);
