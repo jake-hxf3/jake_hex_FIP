@@ -624,8 +624,8 @@ body {
     align-content: center;
     justify-content: center;
     overflow-x: hidden;
-    grid-template-columns: 18px auto;
-    column-gap: 5px;
+    grid-template-columns: 20px auto;
+    column-gap: 10px;
 }
 #load-more span {
     text-align: center;
@@ -639,7 +639,7 @@ body {
 }
 #load-more:hover::after {
     content: url(../images/CR-load.svg);
-    width: 18px;
+    width: 20px;
     grid-column: 1/2;
     animation: loading-btn 3s linear 0s infinite;
 }
