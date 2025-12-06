@@ -132,7 +132,6 @@ body {
         }
 
 /* 3. ---Header--- */
-
 #main-nav label img {
 	background: url(../images/burger.svg) center no-repeat;
 	border: 0px;
@@ -147,13 +146,12 @@ body {
 #main-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0;
  }
  
  #main-nav li a {
      display: block;
      padding: 10px 0 10px 0;
-     text-align: center;
      color: #626262;
      font-size: 14px;
  }
@@ -162,18 +160,25 @@ body {
      border-bottom: 1px solid #efefef;
  }
 
+ #main-nav li:hover {
+    background-color:#e8e7e7;
+ }
+
+
+#burger-con {
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+}
+ 
 #burger-con, #main-nav input {
     display: none;
 }
 
-/* The general sibling combinator ~ means: “Select any element that is a sibling (shares the same parent) and comes after the target element in the DOM.” */
-
-/* When the checkbox is checked, target the <ul id="burger-con"> that comes after it in the markup. */
  #main-nav input:checked ~ #burger-con {
     display: block;
  }
 
- /* When the checkbox is checked, target the <img> inside the <label> that comes after it. */
  #main-nav input:checked ~ label img{
     transform: rotate(90deg);
  }
@@ -181,6 +186,10 @@ body {
 
  /* A ---INDEX--- */
  /* 4. ---Main Hero Image--- */
+#logo {
+    background-color: #CF4241;
+}
+
  #hero-contact {
     font-size: 12px;
     background-color: #efefef;
