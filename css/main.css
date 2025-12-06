@@ -620,7 +620,43 @@ body {
 #load-more {
     height: 45px;
     border-radius: 5px;
+    padding: 0;
+    overflow-x: hidden;
+    grid-template-columns: 100%;
 }
+#load-more span {
+    text-align: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 2;
+}
+#load-more::after {
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: #CF4241;
+    justify-self: start;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+#load-more:hover::after {
+    animation: loading-btn 1.5s linear 0.5s;
+}
+
+@keyframes loading-btn {
+    0% {
+        filter: hue-rotate(0deg);
+        width: 0;
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+        width: 100%;
+    }
+}
+
+
 
  /* 5. ---Quote--- */
  #quote {
