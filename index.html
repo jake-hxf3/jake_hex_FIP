@@ -36,17 +36,17 @@
                     <li><a href="#">Reservations</a></li>
                 </ul>
         </nav>
-        <div id="logo" class="col-span-full">
-            <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
-        </div>
     </header>
 
     <main>
+        <div id="logo" class="grid-con">
+            <img class="col-span-full" src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+        </div>
         <section id="hero">
             <div class="grid-full">
                 <img id="hero-img" src="images/summer-hero.jpg" alt="Main Hero Image of a Morning Lake">
                 <div id="hero-container" class="grid-con">
-                    <a class="button col-start-3 col-end-5" id="book-now" href="#">Book Now</a>     
+                    <a class="btn col-start-3 col-end-5" id="book-now" href="#">Book Now</a>     
                     <div class="hero-h2">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
@@ -79,47 +79,57 @@
             </div>
         </section>
 
-        <section id="experiences" class="grid-con backbox">
+        <section id="experiences" class="grid-con">
             <div class="col-span-full">
                 <h2>Explore Your Summer Experiences!</h2>
                 <p>Let the season draw you outside. Wander the water, the woods, and the open air together as summer unfolds around you.</p>
             </div>
 
-            <div id="exp-gallery" class="col-span-full">
-                <div class="box">
-                    <img src="#" alt="">
-                </div>     
-                <div class="box">
-                    <img src="#" alt="">
-                </div>                
-                <div class="box">
-                    <img src="#" alt="">
-                </div> 
-            </div>
+            <ul id="exp-gallery" class="col-span-full">
+                <li>
+                    <a href="#" class="activity">
+                       <img src="images/summer-exp1.png" alt="A couple swimming in our pool">
+                       <span>Swimming Pool & Lake</span>                        
+                    </a>
+                </li>     
+                <li>
+                    <a href="#" class="activity">
+                        <img src="images/summer-exp2.png" alt="A couple going on an excursion">
+                        <span>Algonquin Park Hiking</span>
+                    </a>
 
-            <div class="col-start-2 col-end-4 box">
-                <p>Load More</p>
-            </div>
+                </li>                
+                <li>
+                    <a href="#" class="activity">
+                        <img src="images/summer-exp3.png" alt="A couple coming to a boat pier">
+                        <span>Boating (Row / Paddle / Motor)</span>
+                    </a>
+                </li> 
+            </ul>
+
+            <button id="load-more" class="btn col-start-2 col-end-4">
+                Load More
+            </button>
         </section>
 
-        <section id="quote" class="grid-full backbox">
-            <div class="grid-con box">
-                <div class="col-span-full">
-                    <p>A perfect summer mix</p>
-                </div>
-                <div class="col-start-3 col-end-5">--The Local Reviewer</div>
-            </div>
-
+        <section id="quote">
+            <h2 class="hidden">Our Review</h2>
+            <blockquote>
+                <q class="col-span-full">A perfect summer mix — serene lakeside mornings and rugged afternoon trails that show you the best of local wilderness.</q>
+                <div class="quote-author col-start-3 col-end-5">--The Local Reviewer</div>
+            </blockquote>
         </section>
 
         <section id="voucher" class="grid-con">
-            <div class="col-span-full box">
-                <p>Don't miss out your summer voucher deals</p>
+            <div class="col-span-full">
+                <h2>Don’t Miss Out Your Summer Voucher Deals</h2>
+                <p>Make this summer unforgettable with special rates on stays, activities, and dining. Your perfect season starts with one click.</p>
+                <a href="#" class="btn">Check Vouchers</a>
             </div>
         </section>
     </main>
 
-    <footer id="main-footer" class="backbox grid-con">
+    <footer id="main-footer" class="grid-con">
         <h2 class="hidden">Couples Resort Footer</h2>
                        
             <div id="main-footer-contact-info" class="col-span-full">                      
@@ -131,11 +141,12 @@
                 <h3 class="hidden">Phone and Fax Information</h3>
                     <p>
                         Toll Free:+1 877 201-1156<br>
-                        FAX:+1 613 638 2217
+                        FAX:+1 613 638 2217<br>
+                        Email: info[at]coupleresort.com
                     </p>
             </div>
             
-            <p id="price-policy" class="col-span-full">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+            <p id="price-policy" class="col-span-full">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.<br>©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
             
     </footer>
     </div>
