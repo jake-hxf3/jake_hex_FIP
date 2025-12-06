@@ -68,7 +68,7 @@ h2 {
 }
 
 p {
-    line-height: 22px;
+    line-height: 25px;
     margin-bottom: 15px;
 }
 
@@ -77,8 +77,8 @@ body {
     padding: 0;
     color: #2f2f2f;
     font-family: 'Inter', sans-serif;
+    font-size: 13px;
     font-weight: 450;
-    font-size: 12px;
 }
 
 .topo-bg::before {
@@ -95,6 +95,10 @@ body {
 
 .cr-red {
     color: #9a2018;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .btn {
@@ -166,27 +170,88 @@ body {
     display: none;
 }
 
-/* The general sibling combinator ~ means: “Select any element that is a sibling (shares the same parent) and comes after the target element in the DOM.” */
-
-/* When the checkbox is checked, target the <ul id="burger-con"> that comes after it in the markup. */
  #main-nav input:checked ~ #burger-con {
     display: block;
  }
 
- /* When the checkbox is checked, target the <img> inside the <label> that comes after it. */
  #main-nav input:checked ~ label img{
     transform: rotate(90deg);
  }
 
+ #logo {
+    padding-bottom: 10px;
+ }
+
+
+ /* A3. ---Hero Intro--- */
+#main-hero {
+    margin-top: 20px;
+}
+
+.hero-overlap {
+   grid-row: 1/1; 
+}
+
+.book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition: all 1s ease;
+    cursor: pointer;
+    grid-row: 1/2;
+    height: 67px;
+ }
+
+ .book-now:hover {
+    box-shadow: inset 0px -120px 0px 0px rgb(196, 28, 28);
+ }
+
+ .hero-img-h2 {
+    background: rgb(255, 255, 255);
+    padding: 15px 15px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-self: end;
+ }
+ 
+ .hero-img-h2 span {
+    color: #9a2018;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 450;
+ }
+ .hero-img-h2 .breadcrumb {
+        margin-bottom: 5px;
+ }
+
+.headline{
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #9a2018;
+}
+
+
 
  /* A ---INDEX--- */
- /* 4. ---Main Hero Image--- */
+.hero-overlap {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+ /* 4. ---Hero Contact--- */
  #hero-contact {
     font-size: 12px;
     background-color: #efefef;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 50px;
+    margin-bottom: 20px;
  }
 
  #contact-con div {
@@ -253,14 +318,14 @@ body {
     margin-right: 10px;
 }
 
-.why-us-img h4 {
+.why-us-img h3 {
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
 .why-us-img a {
-    color: inherit;
+    color: #992120;
 }
 
 #why-choose-us-bottom-nav {
@@ -300,7 +365,7 @@ body {
 .faq {
     background-color: #f4f4f4;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
  }
  
  .faq h2 {
@@ -317,12 +382,15 @@ body {
  
  .faq-items {
     margin-bottom: 16px;
+    list-style: none;
  }
  
- .faq-items h3 {
+ .faq-items summary {
+    font-family: "Sanchez", serif;
     background: #e8e7e7;
     padding: 10px;
     font-size: 15px;
+    cursor: pointer;
  }
  
  .faq-items ul {
@@ -342,7 +410,7 @@ body {
  }
  
  .faq-list-con {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
  }
  
@@ -353,11 +421,15 @@ body {
     margin-top: 15px;
     padding-top: 40px;
     line-height: 22px;
-    font-size: 16px;
  }
+
+  #contact-form-adress-left {
+    margin-bottom: 20px;
+  }
+
  #contact-form-adress-left h3 {
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
  }
 
@@ -398,54 +470,17 @@ body {
     border-radius: 0;
  }
 
+/* ---  END OF INDEX PAGE --- */
+
+
+
  /* B --- SUMMER PAGE --- */
- /* 3. ---Hero--- */
-main {
-    margin-bottom: 80px;
-}
-
-#hero {
-    z-index: 3;
-}
-
-#hero-img, #hero-container {
-    grid-row: 1 / 1;
-    grid-column: 1/-1;
-}
-
-#book-now {
-    height: 54px;
-    grid-row: 1/2;
-    font-family: 'Sanchez', serif;
-    font-size: 14px;
-    font-style: italic;
-}
-
-#hero-container {
-    grid-template-rows: 55px auto 73px;
-}
-
-.hero-h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 15px;
-    background-color: white;
-    grid-column: 1/-1;
-    grid-row: 3/4;
-}
-
-.headline{
-    width: 100%;
-    margin: 20px 0;
-    border: 2px solid #9a2018;
-}
-
- /* 4. ---Intro--- */
+ /* B4. ---Intro--- */
 #address {
     position: relative;
     background-color: #006F79;
     color: white;
+    margin-top: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -486,6 +521,7 @@ main {
 .photograph{
     margin-top: 15px;
     margin-bottom: 60px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .photograph:first-of-type {
@@ -623,7 +659,6 @@ q{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
     background-image: url(../images/summer-voucher.png);
     background-color: rgba(255, 255, 255, 0.75);
     background-blend-mode: lighten;
