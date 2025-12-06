@@ -621,8 +621,11 @@ body {
     height: 45px;
     border-radius: 5px;
     padding: 0;
+    align-content: center;
+    justify-content: center;
     overflow-x: hidden;
-    grid-template-columns: 100%;
+    grid-template-columns: 30px auto;
+    column-gap: 5px;
 }
 #load-more span {
     text-align: center;
@@ -630,30 +633,20 @@ body {
     grid-row: 1/-1;
     z-index: 2;
 }
-#load-more::after {
-    content: "";
-    width: 0px;
-    height: 100%;
-    background-color: #CF4241;
-    justify-self: start;
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-}
 
+#load-more:hover span {
+    grid-column: 2/3;
+}
 #load-more:hover::after {
-    animation: loading-btn 1.5s linear 0.5s;
+    content: url(../images/CR-load.svg);
+    width: 18px;
+    grid-column: 1/2;
+    animation: loading-btn 1.5s linear 0.5s infinite;
 }
 
 @keyframes loading-btn {
-    0% {
-        filter: hue-rotate(0deg);
-        width: 0;
-    }
-
-    100% {
-        filter: hue-rotate(360deg);
-        width: 100%;
-    }
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 
