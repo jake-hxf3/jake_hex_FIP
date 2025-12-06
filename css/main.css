@@ -624,7 +624,7 @@ body {
     align-content: center;
     justify-content: center;
     overflow-x: hidden;
-    grid-template-columns: 30px auto;
+    grid-template-columns: 18px auto;
     column-gap: 5px;
 }
 #load-more span {
@@ -641,7 +641,7 @@ body {
     content: url(../images/CR-load.svg);
     width: 18px;
     grid-column: 1/2;
-    animation: loading-btn 1.5s linear 0.5s infinite;
+    animation: loading-btn 3s linear 0s infinite;
 }
 
 @keyframes loading-btn {
