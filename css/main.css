@@ -844,7 +844,7 @@ q{
 
 #desk-main-nav ul li .current {
     font-weight: bold;
-    color:#992120;
+    color: #992120;
  }
 
 
@@ -1017,6 +1017,10 @@ q{
         transform: rotate(8.7deg);
     }
 
+#desk-address a {
+    font-weight: 600;
+    text-decoration: underline;
+}
   /* 4. --- Experiences --- */ 
   #desk-experiences {
     margin-top: 40px;
