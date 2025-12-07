@@ -22,7 +22,9 @@
     <header id="desk-main-header">
         <nav id="desk-main-nav" class="desk-grid-con">
             <div id="desk-logo" class="desk-col-span-3">
-                <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+                <a href="index.html">
+                    <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">                    
+                </a>
             </div>
             <h2 class="hidden">Main Navigation</h2>
                 <ul class="desk-col-span-7">
@@ -31,7 +33,7 @@
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Dining</a></li>
                     <li><a href="#">Spa</a></li>
-                    <li><a href="#" class="current">Activities</a></li>
+                    <li><a href="summer.html" class="current">Activities</a></li>
                     <li><a href="#">Reservations</a></li>
                 </ul>
                 <a class="book-now-desk col-span-2" href="#">Book Now</a>
@@ -41,6 +43,27 @@
     <main>
         <section id="desk-main-hero" class="desk-grid-full">
             <img src="images/desk-summer-hero.jpg" alt="paddling over the lake" class="col-span-full hero-overlap">
+            <div class="desk-grid-con hero-overlap">
+                <form class="check-availability desk-col-start-9 desk-col-end-12">
+                    <span>Check Availability</span>
+                    <div class="check">
+                        <input type="date" name="cr-date" id="arrival">
+                        <label for="arrival">Your Check In Date</label>                        
+                    </div>
+                    <div class="check">
+                        <input type="number" name="cr-number" min="1" id="persons" placeholder="How Many People?">
+                        <label for="number">How Many People?</label>                        
+                    </div>
+
+                    <div class="main-check">
+                        <input type="checkbox" id="all-in">
+                        <label for="all-in">All Inclusive?</label>                        
+                    </div>
+
+                    <input type="submit" class="desk-submit" value="Let's Create Something Special">
+                </form>
+            </div>
+
             <div class="desk-grid-con hero-overlap">
                 <div class="hero-img-h2">
                     <ul class="breadcrumb">
@@ -67,19 +90,20 @@
                     <img src="images/desk-summer-address2.png" alt="A Moose" class="desk-col-start-10 desk-col-end-13 photograph">                      
                 </div>
 
-                <div class="desk-grid-con col-span-full hero-overlap">
+                <div class="desk-grid-con desk-col-span-full hero-overlap">
                     <h2 class="hero-img-h2">
                         <span>Vacation Options </span><br>Explore Your Summer Experiences!
                     </h2>
                 </div>  
+
             </div>
 
-
             <div class="desk-grid-con">
-                <hr class="headline col-span-full">
-                <div class="col-span-full">
-                    <p>The resort sits on the semi-private Galeairy Lake, an 11 km stretch reaching into Algonquin Park, with 95% of its shoreline untouched—perfect for exploring quiet bays and natural scenery. Let the season draw you outside. Wander the water, the woods, and the open air together as summer unfolds around you.</p>
-                        <p>The rugged surroundings invite guided trail rides into the Algonquin wilderness, while direct access to 35 km of trails along the Madawaska River offers hours of mountain biking or ATVing. You can also enjoy a peaceful hike on the resort’s own trails.</p>                      
+                <div class="desk-col-start-2 desk-col-end-13">
+                    <hr class="headline">
+                    <p>Let the season draw you outside. Wander the water, the woods, and the open air together as summer unfolds around you.</p>
+                    <p>The resort sits on the semi-private Galeairy Lake, an 11 km stretch reaching into Algonquin Park, with 95% of its shoreline untouched—perfect for exploring quiet bays and natural scenery.</p>
+                    <p>The rugged surroundings invite guided trail rides into the Algonquin wilderness, while direct access to 35 km of trails along the Madawaska River offers hours of mountain biking or ATVing. You can also enjoy a peaceful hike on the resort’s own trails.</p>                      
                 </div>
             </div>
         </section>
@@ -89,40 +113,46 @@
             <h3 class="hidden">Enjoy these Activities</h3>
             <ul id="desk-exp-gallery" class="desk-grid-con col-span-full">
                 <li><a href="#" class="activity">
-                    <img src="images/desk-summer-exp1.jpg" alt="A couple swimming in the pool">
+                    <img src="images/desk-summer-exp1.jpg" loading="lazy" alt="A couple swimming in the pool">
                     <span>Swimming Pool & Lake<br>
                     <span class="exp-desc">For an invigorating experience, take a refreshing wild swim!</span></span>
                 </a></li>  
 
                 <li><a href="#" class="activity">
-                    <img src="images/desk-summer-exp2.jpg" alt="A couple hugging each other on an excursion to the mountains">
+                    <img src="images/desk-summer-exp2.jpg" loading="lazy" alt="A couple hugging each other on an excursion to the mountains">
                     <span>Algonquin Park Hiking<br>
                     <span class="exp-desc">We provide free Algonquin Park passes for all staying guests.</span></span>
                 </a></li>  
 
                 <li><a href="#" class="activity">
-                    <img src="images/desk-summer-exp3.jpg" alt="A couple walking towards the pier with boats">
+                    <img src="images/desk-summer-exp3.jpg" loading="lazy" alt="A couple walking towards the pier with boats">
                     <span>Boating (Motor / Paddle / Row)<br>
                     <span class="exp-desc">Enjoy a free leisurely tour along the shores of Galeairy Lake</span></span>
                 </a></li>
 
                 <li><a href="#" class="activity">
-                    <img src="images/desk-summer-exp4.jpg" alt="A desk with laptop and coffee by the lake">
+                    <img src="images/desk-summer-exp4.jpg" loading="lazy" alt="A desk with laptop and coffee by the lake">
                     <span>Patio by Lake<br>
                     <span class="exp-desc">Service Patio for Meals / Snacks / Drinks</span></span>
                 </a></li>
 
                 <li><a href="#" class="activity">
-                    <img src="images/desk-summer-exp6.jpg" alt="A couple standing together in a tennis court">
+                    <img src="images/desk-summer-exp5.jpg" loading="lazy" alt="A couple kissing in front of a sunset with their bicycles">
+                    <span>Biking Trails<br>
+                    <span class="exp-desc">Each of the trails are rated easy for all to enjoy.</span></span>
+                </a></li>
+
+                <li><a href="#" class="activity">
+                    <img src="images/desk-summer-exp6.jpg" loading="lazy" alt="A couple standing together in a tennis court">
                     <span>Sport Courts<br>
                     <span class="exp-desc">Pickleball - Tennis - Badminton - Basket Ball</span></span>
                 </a></li>
             </ul>
 
-            <button class="load-more btn">
-                <span>Load More</span>
-            </button>
-        </section>
+                <button class="load-more btn">
+                    <span>Load More</span>
+                </button>                
+       </section>
 
         <article id="desk-voucher" class="desk-grid-trunc">
             <div class="voucher-img desk-col-start-1 desk-col-end-6"></div>
@@ -137,7 +167,7 @@
             <h2 class="hidden">Our Review</h2>
             <blockquote>
                 <q class="desk-col-span-full">A perfect summer mix — serene lakeside mornings and rugged afternoon trails that show you the best of local wilderness.</q>
-                <div class="quote-author">--The Local Reviewer</div>
+                <div class="quote-author">— The Local Reviewer</div>
             </blockquote>
             <hr class="headline">
         </section>
