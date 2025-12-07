@@ -1,11 +1,18 @@
 # Project Name
-![insert alt text](images/example.jpg)
+![The Couples Resort Logo](images/couples_resort_logo.svg)
 
 This is a repository for the Final Integrated Project of Level 1 - Interactive Media Design.
+Pages Included
+1. Summer Activities
+2. Summer Activities (Desktop)
+3. Exotic Room
+4. Packages
+
+
 ## Installation 💻
 No installation required, simply download the zip file and extract.
 ## Usage
-Open index.html in the browser of your choice and see the website.
+Open index.html in the browser of your choice and see the The Couples Resort website.
 
 ## Contributing 
 1. Fork it!
@@ -20,4 +27,3 @@ TODO: Write history
 Jake
 ## License
 MIT License
-ß
