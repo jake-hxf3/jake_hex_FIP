@@ -560,6 +560,30 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+#experiences .exp-gallery li:nth-child(n+4) {
+    display: none;
+}
+#experiences .exp-gallery:has(+ #show-more:checked) li:nth-child(n+4) {
+    display: block;
+}
+
+#mobile-load span:nth-child(2) {
+    display: none;
+    grid-row: 1/-1;
+}
+
+#show-more:checked + #mobile-load span:nth-child(2) {
+    display: block;
+}
+#show-more:checked + #mobile-load span:first-child {
+    display: none;
+}
+#show-more:checked + #mobile-load:hover::after {
+    content: "↑";
+    font-size: 22px;
+    animation: none;
+}
+
 .activity {
     display: grid;
     min-height: 280px;
@@ -608,8 +632,6 @@ body {
     opacity: 5%;
 }
 
-
-
 .activity:hover > span::after {
     content: "→";
     position: relative;
@@ -629,8 +651,8 @@ body {
     100% {opacity: 0; left: 17px;}
 }
 
+
 .load-more {
-    height: 45px;
     border-radius: 5px;
     padding: 0;
     align-content: center;
@@ -661,7 +683,9 @@ body {
     100% {transform: rotate(360deg);}
 }
 
-
+#mobile-load {
+    height: 45px;
+}
 
  /* 6. ---Quote--- */
  #quote {
@@ -872,6 +896,103 @@ q{
     margin-bottom: 20px;
   }
 
+  #desk-main-hero .cr-red:hover::before {
+    content: "🫂";
+  }
+
+    /* 2.1. Hero Form */
+    .check-availability {
+        background-color: #992120;
+        color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        font-family: 'Inter', sans-serif;
+        height: fit-content;
+        padding: 16px;
+        margin-top: 30px;
+        font-size: 14px;
+        z-index: 4;
+    }
+
+    .check-availability > span {
+        display: block;
+        font-family: 'Sanchez', serif;
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .check {
+        display: grid;
+        align-items: center;
+    }
+
+    .check input {
+        display: block;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        border-radius: 3px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 32px;
+        width: 100%;
+    }
+
+    .check label {
+        display: none;
+    }
+
+    .check input, .check label {
+        color: #2f2f2f;
+        margin-bottom: 10px;
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+    }
+
+    .main-check{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 15px auto;
+        column-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-check input:checked + label::after {
+        content: "🛎️";
+        margin-left: 5px;
+    }
+
+
+    .desk-submit {
+        width: 100%;
+        height: 45px;
+        color: wheat;
+        background-color: #CF4241;
+        border: none;
+    }
+
+    .desk-submit:hover {
+        background-color: #ff8787;
+        color: black;
+    }
+
+    .desk-submit:active {
+        animation: filling-btn 3s linear 0s infinite;
+    }
+
+    @keyframes filling-btn {
+        0% {
+            box-shadow: inset 0 0 0 0 rgb(255, 41, 94);
+        }
+        45% {
+            box-shadow: inset 500px 0 0 0 rgb(255, 41, 94);
+        }
+        90% {
+            box-shadow: inset 0 0 0 0 rgb(255, 41, 94);        
+        }
+    }
+
+
+
   /* 3. --- Intro --- */  
   #desk-address {
     margin-top: 105px;
@@ -984,7 +1105,10 @@ q{
 
 #desk-voucher .voucher-text {
     display: flex;
+    padding-left: 24px;
+    padding-right: 20px;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     grid-row: 1/2;
 }
@@ -1032,14 +1156,14 @@ q{
     grid-template-columns: repeat(4,auto);
 }
 
-q{
+#desk-quote q{
     font-family: 'Sanchez', serif;
     font-size: 36px;
     font-style: italic;
     margin-bottom: 20px;
 }
 
-.quote-author {
+#desk-quote .quote-author {
     font-size: 32px;
     font-weight: 200;
 }
