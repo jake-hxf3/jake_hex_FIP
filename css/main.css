@@ -89,7 +89,7 @@ body {
     background-image: url(../images/topography.svg);
     opacity: 0.3;
     background-repeat: no-repeat;
-    background-size: 700px;
+    background-size: cover;
 }
 
 
@@ -467,7 +467,7 @@ body {
  }
 
  #contact-form-fields-right input[type="submit"]:hover {
-    background-color: #626262;
+    background-color: #CF4241;
     border-radius: 0;
  }
 
@@ -481,21 +481,21 @@ body {
     margin-top: 80px;
 }
 
-#address-overlap {
+.address-overlap {
     height: 240px;
     grid-template-rows: 240px;
     align-items: end;
 }
 
-#address-overlap > div {
+.address-overlap > div {
     z-index: 2;
 }
 
-#address-overlap h2 {
+.address-overlap h2 {
     z-index: 3;
 }
 
-#photo-con {
+.photo-con {
     position: relative;
     width: 100%;
     height: 152px;
@@ -551,11 +551,11 @@ body {
 #experiences h2 {
     margin: 15px 0;
 }
-#exp-gallery {
+.exp-gallery {
     list-style: none;
 }
 
-#exp-gallery li {
+.exp-gallery li {
     margin-bottom: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -566,7 +566,7 @@ body {
     background-color: #d9d9d9;
     color: #992120;
     grid-template-columns: auto;
-    grid-template-rows: 222px auto;
+    grid-template-rows: 222px 58px;
     transition: all linear 0.2s;
 }
 
@@ -587,7 +587,7 @@ body {
     mix-blend-mode: multiply; 
 }
 
-.activity span {
+.activity > span {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -608,6 +608,8 @@ body {
     opacity: 5%;
 }
 
+
+
 .activity:hover > span::after {
     content: "→";
     position: relative;
@@ -627,7 +629,7 @@ body {
     100% {opacity: 0; left: 17px;}
 }
 
-#load-more {
+.load-more {
     height: 45px;
     border-radius: 5px;
     padding: 0;
@@ -637,17 +639,17 @@ body {
     grid-template-columns: 20px auto;
     column-gap: 10px;
 }
-#load-more span {
+.load-more span {
     text-align: center;
     grid-column: 1/-1;
     grid-row: 1/-1;
     z-index: 2;
 }
 
-#load-more:hover span {
+.load-more:hover span {
     grid-column: 2/3;
 }
-#load-more:hover::after {
+.load-more:hover::after {
     content: url(../images/CR-load.svg);
     width: 20px;
     grid-column: 1/2;
@@ -756,3 +758,338 @@ q{
     padding-top: 30px;
     line-height: 22px;
  }
+
+
+
+
+ /* ---D-SUMMER DESKTOP---*/
+
+ #desktop {
+    font-size: 18px;
+ }
+
+ #desktop h1, #desktop h2 {
+    font-size: 28px;
+ }
+
+ #desktop p {
+    font-size: 16px;
+    line-height: 35px;
+ }
+
+
+ /* 1. --- Header --- */
+
+#desk-main-header {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: fixed;
+    inset: 0 0;
+    z-index: 8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+} 
+
+#desk-main-nav {
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#desk-logo {
+    border-right: #2f2f2f solid 2px;
+    padding-right: 20px;
+}
+
+#desk-main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    align-items: center;
+    list-style: none;
+ }
+
+#desk-main-nav ul li {
+    padding: 0;
+ }
+
+#desk-main-nav ul li a {
+    display: grid;
+    place-items: center;
+    height: 112px;
+}
+
+#desk-main-nav ul li .current {
+    font-weight: bold;
+    color:#992120;
+ }
+
+
+#desk-main-nav ul li a:hover {
+    background-color: #ffe4e4;
+}
+
+.book-now-desk {
+    display: grid;
+    place-items: center;
+    background-color: #9a2018;
+    color: #fff;
+    transition: all 500ms ease-in-out;
+    font-family: 'Sanchez', serif;
+    font-style: italic;
+    cursor: pointer;
+ }
+
+ .book-now-desk:hover {
+    box-shadow: inset 0px -150px 0px 0px rgb(196, 28, 28);
+ }
+
+ #desk-main-header .book-now-desk {
+    height: 100%; 
+ }
+
+
+  /* 2. --- Hero --- */  
+  #desktop main {
+    padding-top: 112px;
+  }
+  #desktop .breadcrumb, #desktop .hero-img-h2 span {
+    font-size: 18px;
+  }
+
+  #desk-main-hero {
+    margin: 0 auto;
+  }
+  #desktop .hero-img-h2 {
+    padding: 30px 25px 0;
+    grid-column: 2/8;
+  }
+
+  #desktop .headline {
+    margin-top: 30px;
+  }
+
+  #desk-main-hero p {
+    margin-bottom: 20px;
+  }
+
+  /* 3. --- Intro --- */  
+  #desk-address {
+    margin-top: 105px;
+  }
+  #desk-address .address-overlap {
+    height: 300px;
+    grid-template-rows: 100%;
+  }
+  #desk-address .photo-con {
+    height: 100%;
+  }
+  #desk-address .photos {
+    margin-bottom: 60px;
+  }
+  #desk-address .photograph {
+    grid-row:  1/-1;
+  }
+    #desk-address .photograph:first-of-type {
+        transform: rotate(19.03deg) translateX(-2px);
+    }
+    #desk-address .photograph:nth-of-type(2) {
+        transform: rotate(8.7deg);
+    }
+
+  /* 4. --- Experiences --- */ 
+  #desk-experiences {
+    margin-top: 40px;
+  }
+
+  #desk-exp-gallery {
+    list-style: none;
+    row-gap: 30px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+
+  #desk-exp-gallery li:nth-child(odd) {
+    grid-column: 1/7;
+  }
+  #desk-exp-gallery li:nth-child(even) {
+    grid-column: 7/13;
+  }
+  #desk-exp-gallery .activity {
+    grid-template-rows: 346px 117px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  #desk-exp-gallery .activity span {
+    font-size: 24px;
+  }
+
+  #desk-exp-gallery .activity span {
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  #desk-exp-gallery .activity .exp-desc {
+    font-family: 'Inter', serif;
+    margin-top: 12px;
+    font-size: 16px;
+    color: black;
+    grid-row: 2/3;
+  }
+
+  #desk-exp-gallery .activity:hover > span .exp-desc {
+    color: lightgray;
+  }
+
+  #desk-exp-gallery .activity > span::after { 
+    grid-row: 1/3;
+    font-size: 48px;
+  }
+
+  #desk-experiences .load-more {
+    width: 386px;
+    height: 97px;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+
+#desk-experiences .load-more:hover::after {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  /* 5. --- Voucher --- */
+  #desk-voucher {
+    margin-top: 100px;
+    margin-bottom: 132px;
+    border: 2px black solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #desk-voucher > div {
+    grid-row: 1/-1;
+  }
+
+  #desk-voucher .voucher-img {
+    height: 475px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    background-image: url(../images/desk-summer-voucher.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+#desk-voucher .voucher-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 1/2;
+}
+
+#desk-voucher h2 {
+    color: #992120;
+    margin-bottom: 40px;
+}
+
+#desk-voucher p {
+    margin-bottom: 40px;
+}
+
+#desk-voucher .btn {
+    width: 285px;
+    min-height: 67px;
+    margin:  0 auto;
+}
+
+
+  /* 4. --- Quotes --- */ 
+.bg-blend-dark {
+    background-image: url(../images/desk-summer-footer.jpg);
+    background-color: rgb(137, 137, 137);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: white;
+}
+
+#desk-quote {
+    width: 100vw;
+    height: 600px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 80px;
+    padding: 200px 0;
+    background-size: cover;
+ }
+
+#desk-quote blockquote {
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: repeat(4,auto);
+}
+
+q{
+    font-family: 'Sanchez', serif;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+#desk-quote .headline {
+    margin: 50px auto;
+    width: 900px;
+    border-color: #CF4241;
+}
+
+  /* 5. --- Footer --- */
+  #desk-footer {
+    background-size: cover;
+    position: relative;
+    color: white;
+    min-height: 534px;
+    padding-top: 40px;
+  }
+
+  .desk-contact-info h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  #desk-footer .book-now-desk {
+    height: 132px;
+  }
+
+  .desk-footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+  }
+
+  .desk-footer-nav ul {
+    list-style: none;
+    grid-row: 1/-1;
+  }
+
+  #desk-footer ul li a {
+    line-height: 48px;
+    color: white;
+  }
+
+  #desk-footer ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+  }
+
+  #desk-footer #price-policy {
+    border-top: 1px solid white;
+  }

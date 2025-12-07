@@ -8,7 +8,11 @@ body, p, h1, h2, h3, h4, h5 {
 /* ---Utility Classes--- */
 
 .hidden {
-   display: none;
+   color: rgba(0,0,0,0);
+   user-select: none;
+   position: fixed;
+   right: 0;
+   bottom: 0;
 }
 
 .box {
@@ -73,17 +77,31 @@ body, p, h1, h2, h3, h4, h5 {
 
 .desk-grid-con { 
    display: grid;
-   grid-template-columns: repeat(12, 79px);
+   grid-template-columns: repeat(12, 1fr);
    grid-column-gap: 20px;
    width: 1200px;
    margin: 0 auto;
-   padding-left: 16px;
-   padding-right: 16px;
+}
+
+.desk-grid-trunc{
+   display: grid;
+   width: 1000px;
+   box-sizing: border-box;
+   grid-template-columns: repeat(10, 1fr);
+   margin: 0 auto;
+   column-gap: 20px;
 }
 
 .desk-grid-full {
    display: grid;
    grid-template-columns: 1200px;
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.desk-grid-cover {
+   display: grid;
+   width: 100vw;
 }
 
 /* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */
@@ -101,6 +119,7 @@ body, p, h1, h2, h3, h4, h5 {
 .desk-col-span-11	{grid-column: span 11;}
 .desk-col-span-12	{grid-column: span 12;}
 .desk-col-span-full {grid-column: 1 / -1;}
+.desk-col-span-trunc {grid-column: 2 / 12;}
 
 .desk-col-start-1	{grid-column-start: 1;}
 .desk-col-start-2	{grid-column-start: 2;}
