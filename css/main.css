@@ -51,6 +51,9 @@ ul, li {
     margin: 0;
     padding: 0;
 }
+    .ul-none {
+        list-style: none;
+    }
 
 input, textarea {
     display: block;
@@ -60,11 +63,15 @@ input, textarea {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Sanchez', serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 18px;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 p {
@@ -81,6 +88,23 @@ body {
     font-weight: 450;
 }
 
+
+/* 2.5. Ultility Classes */
+    /* Typographic */
+.cr-red {
+    color: #9a2018;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.title-line {
+    line-height: 50px;
+    border-bottom: #992120 solid 3px;
+}
+
+    /* Backgrounds */
 .topo-bg::before {
     content: "";
     position: absolute;
@@ -92,14 +116,11 @@ body {
     background-size: cover;
 }
 
-
-.cr-red {
-    color: #9a2018;
+.shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.italic {
-    font-style: italic;
-}
+    /* Buttons */
 
 .btn {
     display: grid;
@@ -116,6 +137,8 @@ body {
 .btn:hover {
     background-color: #CF4241;
 }
+
+    /*Breadcrumbs*/
 
 .breadcrumb {
     font-family: 'Cabin', sans-serif;
@@ -240,11 +263,6 @@ body {
 
 
  /* A ---INDEX--- */
-.hero-overlap {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-}
-
  /* 4. ---Hero Contact--- */
  #hero-contact {
     font-size: 12px;
@@ -502,30 +520,29 @@ body {
     background-color: darkcyan;
 }
 
-#address details {
+.read-more {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
+    .read-more summary {
+        cursor: pointer;
+        font-size: 13px;
+    }
+        .read-more summary:hover {
+            color: #992120;
+        }
 
-#address summary {
-    cursor: pointer;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-    #address summary:hover {
-        color: #992120;
+    .read-more[open] summary {
+        margin-top: 0;
+        order: 1;
     }
-
-#address details[open] summary {
-    order: 1;
-}
-    #address details summary::after{
-        content: "READ MORE...";
-    }
-    #address details[open] summary::after{
-        content: "SEE LESS";
-    }
+        .read-more summary::after{
+            content: "READ MORE...";
+        }
+        .read-more[open] summary::after{
+            content: "SEE LESS";
+        }
 
 .photograph{
     margin-top: 15px;
@@ -542,6 +559,7 @@ body {
 
  /* 5. ---Experiences--- */
 #experiences {
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
     margin-bottom: 50px;
@@ -697,14 +715,14 @@ body {
     color: white;
  }
 
-blockquote {
+#quote blockquote {
     display: grid;
     margin: 0;
     padding: 0;
     grid-template-columns: repeat(4,auto);
 }
 
-q{
+#quote q{
     font-family: 'Sanchez', serif;
     font-size: 22px;
     font-style: italic;
@@ -717,15 +735,16 @@ q{
 }
 
  /* 7. ---Vouchers--- */
-#voucher > div {
-    height: 228px;
-    padding-left: 20px;
-    padding-right: 20px;
+#voucher {
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+#voucher > div {
+    padding: 20px;
+    align-items: space-between;
     background-image: url(../images/summer-voucher.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.75);
     background-blend-mode: lighten;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -738,11 +757,12 @@ q{
 }
 
 #voucher p {
-    font-size: 11px;
+    font-size: 12px;
     margin-bottom: 20px;
 }
 #voucher .btn {
-    width: fit-content;
+    font-size: 12px;
+    box-sizing: border-box;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -1221,3 +1241,205 @@ q{
   #desk-footer #price-policy {
     border-top: 1px solid white;
   }
+
+
+   /* ---C-ROOMS---*/
+
+   /* --- 1. Hero --- */
+   #main-hero h3 {
+    margin-bottom: 20px;
+   }
+   .cr-red-link {
+    color: #992120;
+    text-decoration: underline;
+   }
+   .cr-red-link:hover {
+    color: #CF4241;
+   }
+   .multi-p {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+   }
+
+   /* --- 2. Exclusive --- */
+#exclusive {
+    background-color: lightgray;
+    width: 388px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#exclusive h2 {
+    margin-bottom: 30px;
+}
+#exclusive-list {
+    width: 100%;
+    row-gap: 30px;
+}
+#exclusive-list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+}
+
+#exclusive-list img {
+    width: 32px;
+    margin-right: 16px;
+}
+
+   /* --- 3. Amenities --- */
+#amenities {
+    margin-top: 40px;
+}
+    #amenities h2 {
+        margin-bottom: 10px;
+    }
+
+
+.std-list {
+    list-style-type: none;
+    line-height: 20px;
+}
+.std-list li::before {
+    content: "✓";
+    font-weight: 700;
+    color: #992120;
+    margin-right: 10px;
+}
+
+#amenities ul {
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+}
+
+#amenities .read-more summary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#amenities .read-more:not([open]) + .italic{
+    display: none;
+}
+
+   /* --- 4. Reserve --- */
+#reserve {
+    margin-top: 30px;
+    width: 388px;
+    padding: 25px 20px;
+    background-image: url(../images/exotic-reserve.jpg);
+    background-size: cover;
+    background-color: #e0e0e0;
+    background-blend-mode: screen;
+    background-repeat: none;
+}
+
+
+   /* --- 5. See Also --- */
+   #see-also {
+    margin-top: 30px;
+    grid-template-rows: auto auto;
+    align-items: center;
+   }
+
+   .link-big {
+    font-size: 14px;
+    font-family: "Sanchez", serif;
+    width: fit-content;
+   }
+
+   #see-also .activity {
+    margin-top: 20px;
+    }
+
+
+    /* ---E-MUSICIAN---*/  
+
+    /* ---1. How it works --- */
+
+#musician-works {
+    margin-top: 10px;
+}
+
+#musician-works h3 {
+    margin-bottom: 20px;
+}
+
+#musician-works .icon-list {
+    padding-left: 10px;
+}
+
+.icon-list {
+    list-style-type: none;
+}
+   .icon-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    .icon-list li img {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    /* ---2. Packages --- */
+    #musician-packages {
+        margin-top: 30px;
+    }
+    #musician-packages h2 {
+        margin-bottom: 20px;
+    }
+
+    #musician-apply {
+        margin-top: 10px;
+    }
+    #musician-apply h3 {
+        line-height: 35px;
+    }
+    #musician-apply .btn {
+        margin-top: 20px;
+    }
+
+
+
+
+    /* ---3. Reviews ---*/
+    #musician-reviews {
+        margin-top: 30px;
+    }
+
+    #musician-reviews h2 {
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        border-bottom: 2px solid #333;
+        margin-bottom: 30px;
+    }
+    .comment q{
+         font-family: "Sanchez", serif;
+         font-size: 13px;
+    }
+    .comment h3 {
+        line-height: 50px;
+        text-align: right;
+    }
+    .comment > div {
+        margin: 0 10px;
+    }
+    .comment .job {
+        font-family: "Cabin", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .comment .job::before {
+        content: "-";
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+
+
+   
