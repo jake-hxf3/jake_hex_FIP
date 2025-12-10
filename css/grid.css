@@ -51,6 +51,16 @@ body, p, h1, h2, h3, h4, h5 {
    padding-right: 15px;
 }
 
+.grid-card {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 20px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
 .grid-full {
    display: grid;
    grid-template-columns: 412px;

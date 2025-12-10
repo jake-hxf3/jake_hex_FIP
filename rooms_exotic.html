@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/d0e8431583.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Exotic Suites | Couples Resort</title>
+  </head>
+
+  <body>
+    <h1 class="hidden">Exotic Suites At Couples Resort</h1>
+    <div id="mobile-outline">
+    <header id="main-header" class="grid-con">
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger">
+                <img src="images/burger.svg" alt="hamburger menu icon">
+            </label>
+                <ul id="burger-con">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="package_musician.html">Packages</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Spa</a></li>
+                    <li><a href="summer.html">Activities</a></li>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+        </nav>
+        <div id="logo" class="col-span-full">
+            <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+        </div>
+    </header>
+
+    <main>
+        <section id="main-hero" class="grid-full">
+            <img src="images/exotic-hero-1.jpg" alt="couples resort on lake" class="col-span-full hero-overlap">
+            <div class="grid-con col-span-full hero-overlap">
+                <a class="book-now col-start-3 col-end-5" id="book-now-top" href="#">Book Now</a>
+                <div class="hero-img-h2">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Couples Resort</a></li>
+                        <li><a href="#">Rooms</a></li>
+                    </ul>
+                    <h2>Exotics Jr. Suites</h2>
+                </div>
+            </div>  
+
+            <section class="grid-con">
+                <hr class="headline col-span-full">
+                <h3 class="italic col-span-full">For the tribal in you.</h3>
+                <p class="col-span-full multi-p">
+                    <span>This is for the adventurous; if one Dreams of having a Romantic Escape you will be Spoiled with all the Indulgences in these Jr Suites and the Exotic in you will be Satisfied.</span>
+                    <span>Our spacious Exotic Junior Suites feature rich, earthy tones and subtle African-inspired décor, including artisanal masks, carved accents, and patterned details. Nestled among the trees with views of Galeairy Lake, these suites offer a warm, immersive retreat. Each includes a double walk-in shower with a Turkish steam bath option for added relaxation.</span>
+                    <span>For even more space, our Grand Exotic Rooms elevate the experience with a larger layout and enhanced comfort.</span>
+                    <a href="#" class="cr-red-link">SEE CATALOGUE & VIRTUAL TOUR &gt&gt</a>
+                </p>
+            </section>
+        </section>
+
+        <section id="exclusive" class="grid-card shadow">
+            <h2 class="cr-red col-span-full">Exclusive to Exotics</h2>
+            <ul id="exclusive-list" class="col-span-full grid-card no-padding ul-none">
+                <li class="col-span-2">
+                    <img src="images/single-bed-icon.svg" alt="icon for small bed">
+                    <span>2 BEDROOMS AT 1000 SQ FT </span>
+                </li>
+
+                <li class="col-span-2">
+                    <img src="images/double-bed-icon.svg" alt="icon for large bed">
+                    <span>4 BEDROOMS AT 600 SQ FT </span>
+                </li>
+
+                <li class="col-span-2">
+                    <img src="images/hot-tub-icon.svg" alt="icon for hot tub">
+                    <span>PRIVATE BALCONY HOT TUB</span>
+                </li>
+
+                <li class="col-span-2">
+                    <img src="images/shower-line-icon.svg" alt="icon for shower">
+                    <span>2 PERSON STEAM SHOWER</span>
+                </li>
+
+                <li class="col-span-2">
+                    <img src="images/oven-icon.svg" alt="icon for oven">
+                    <span>MICROWAVE</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="amenities" class="grid-con">
+            <div class="col-span-full">
+                <h2>Other Amenities</h2>
+                <ul class="std-list">
+                    <li>5-Diamond quality</li>
+                    <li>Private hot tubs (select rooms)</li>
+                    <li>Lakeside views with balcony/deck</li>
+                    <li>King bed & fireplace</li>
+                    <li>Free fibre-optic Wi-Fi</li>
+                </ul>
+                <details class="read-more">
+                    <summary></summary>
+                    <ul class="std-list">
+                        <li>Multi-head European shower</li>
+                        <li>50" TV</li>
+                        <li>Keurig coffee, bar fridge & essentials</li>
+                        <li>Whirlpool tub (for two)</li>
+                        <li>In room safe</li>
+                    </ul>             
+                </details> 
+                <p class="italic">All rooms accessed daily for outdoor hot tub inspection.</p>     
+            </div> 
+        </section>
+
+        <section id="reserve" class="grid-card shadow">
+            <h2 class="col-span-full">Reserve Your Stay at Exotics Jr.</h2>
+            <form id="#reservation-form" class="col-span-full">
+                <p class="col-span-full">Select your option:</p>
+                <input type="radio" name="exo-select" id="exo-jr">
+                <label for="exo-jr">EXOTIC JR SUITE (600 SQ FT)</label>
+                <input type="radio" name="exo-select" id="exo-gr">
+                <label for="exo-gr">GRAND EXOTIC ROOM (1000 SQ FT)</label>
+                <input type="text" name="rooms-date" id="exo-date" placeholder="Your Check-in Date" class="col-span-full">
+                <label for="exo-date" class="hidden">Your Check-in Date</label>
+                <input type="text" name="rooms-ppl" id="exo-ppl" placeholder="How Many People?" class="col-span-full">
+                <label for="exo-ppl" class="hidden">How Many People?</label>
+                <p>(Prices include daily 5 Course Dinner and Breakfast)</p>
+                <input type="submit" value="Check Availability" class="col-span-full desk-submit">
+            </form>
+        </section>
+
+        <section id="see-also" class="grid-con">
+            <h2 class="col-span-full title-line hero-overlap">People Also Viewed</h2>
+            <a href="#" class="link-big cr-red-link col-start-4 col-end-5 hero-overlap">All Rooms &gt</a>
+            <a href="#" class="activity col-span-full">
+                <img src="images/seemore-master.jpg" loading="lazy" alt="A picture of our masters suites">
+                <span>Master Suites</span>
+            </a>
+        </section>
+
+    </main>
+
+    <footer id="main-footer" class="grid-con">
+        <h2 class="hidden">Couples Resort Footer</h2>
+                       
+            <div id="main-footer-contact-info" class="col-span-full">                      
+                <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                <h3 class="hidden">Phone and Fax Information</h3>
+                    <p>
+                        Toll Free: +1 877 201-1156<br>
+                        FAX: +1 613 638 2217<br>
+                        Email: info[at]coupleresort.com
+                    </p>
+            </div>
+            
+            <p id="price-policy" class="col-span-full">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.<br>©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+            
+    </footer>
+    </div>
+  </body>
+
+</html>
