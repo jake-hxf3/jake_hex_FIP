@@ -89,6 +89,66 @@ body {
 }
 
 /* 2.4. Forms */
+
+/* A form with new styles for checkboxes and radios */
+.std-form {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 10px;
+}
+
+.std-form label {
+    font-family: "Cabin", sans-serif;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.std-form input[type="radio"],
+.std-form input[type="checkbox"] {
+    appearance: none;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}
+
+.std-form input[type="radio"] {
+    border-radius: 50%;
+}
+.std-form input[type="radio"]:checked::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #2f2f2f;
+    border-radius: 50%;
+}
+
+.std-form input[type="checkbox"]:checked::after {
+    content: "✔";
+    display: block;
+    font-size: 16px;
+}
+
+.std-form input[type="radio"]:hover,
+.std-form input[type="checkbox"]:hover {
+    border-color: #838383;
+}
+
+.std-form input[type="radio"]:hover::after {
+    background-color: #838383;
+}
+.std-form input[type="checkbox"]:hover::after {
+    color: #838383;
+}
+
+.std-form input[type="submit"]{
+    width: 100%;
+}
+
+    /* for certain inputs like text, date or number*/
     .std-inp {
         display: block;
         box-sizing: border-box;
@@ -1335,63 +1395,6 @@ body {
 }
 #reserve label[for="exo-gr"] {
     margin-bottom: 30px;
-}
-
-.std-form {
-    display: grid;
-    grid-template-columns: 20px auto;
-    column-gap: 10px;
-}
-
-.std-form label {
-    font-family: "Cabin", sans-serif;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.std-form input[type="radio"],
-.std-form input[type="checkbox"] {
-    appearance: none;
-    display: flex;
-    place-items: center;
-    place-content: center;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-}
-
-.std-form input[type="radio"] {
-    border-radius: 50%;
-}
-.std-form input[type="radio"]:checked::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #2f2f2f;
-    border-radius: 50%;
-}
-
-.std-form input[type="checkbox"]:checked::after {
-    content: "✔";
-    display: block;
-    font-size: 16px;
-}
-
-.std-form input[type="radio"]:hover,
-.std-form input[type="checkbox"]:hover {
-    border-color: #838383;
-}
-
-.std-form input[type="radio"]:hover::after {
-    background-color: #838383;
-}
-.std-form input[type="checkbox"]:hover::after {
-    color: #838383;
-}
-
-.std-form input[type="submit"]{
-    width: 100%;
 }
 
 
