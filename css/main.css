@@ -1204,6 +1204,7 @@ body {
 
 #desk-voucher .btn {
     width: 285px;
+    font-size: inherit;
     min-height: 67px;
     margin:  0 auto;
 }
