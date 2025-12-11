@@ -43,19 +43,15 @@
     <main>
         <section id="desk-main-hero" class="desk-grid-full">
             <img src="images/desk-summer-hero.jpg" alt="paddling over the lake" class="col-span-full hero-overlap">
-            <div class="desk-grid-con hero-overlap">
+            <div class="desk-grid-con col-span-full hero-overlap">
                 <form class="check-availability desk-col-start-9 desk-col-end-12">
                     <span>Check Availability</span>
-                    <div class="check">
-                        <input type="date" name="cr-date" id="arrival">
-                        <label for="arrival">Your Check In Date</label>                        
-                    </div>
-                    <div class="check">
-                        <input type="number" name="cr-number" min="1" id="persons" placeholder="How Many People?">
-                        <label for="persons">How Many People?</label>                        
-                    </div>
+                        <input type="date" name="cr-date" id="arrival" class="std-inp check-inp">
+                        <label for="arrival" class="hidden">Your Check In Date</label>                        
+                        <input type="number" name="cr-number" min="1" id="persons" placeholder="How Many People?" class="std-inp check-inp">
+                        <label for="persons" class="hidden">How Many People?</label>                        
 
-                    <div class="main-check">
+                    <div class="check">
                         <input type="checkbox" id="all-in">
                         <label for="all-in">All Inclusive?</label>                        
                     </div>
@@ -64,7 +60,7 @@
                 </form>
             </div>
 
-            <div class="desk-grid-con hero-overlap">
+            <div class="desk-grid-con col-span-full hero-overlap">
                 <div class="hero-img-h2">
                     <ul class="breadcrumb">
                         <li><a href="index.html">Couples Resort</a></li>
